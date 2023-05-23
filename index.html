@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Encriptador</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+    <body>
+           <div class="container">
+            <header class="logo">
+                <img src="imagenes/—Pngtree—network blue security stereo micro-stereo_4993773.png">
+            </header>
+            <main>
+
+                <section class="texto">
+                  <textarea class="texto-cap" placeholder="Escriba su texto"></textarea>
+                  <div>
+                     <h6 class="aviso">&#x26A0; solo letras minusculas y sin acento</h6>
+                  </div>
+                </section>
+
+                <section class="area-2">
+                     <textarea class="mensaje"></textarea>
+                     <button class="bt-copiar" onclick="copiar()">Copiar texto</button>
+                </section>
+
+            </main>
+            <div class="botones">
+                <button class="encriptar-bt" onclick="btEncriptar()">Encriptar</button>
+                <button class="desencriptar-bt" onclick="btDesencriptar()">Desencriptar</button>
+            </div>
+        </div>
+        <footer class="datos">
+            <br>
+            <p>© Alejandro Alvarez</p>
+            <br>
+            <p>alejandromuralles56@gmail.com</p>
+            <br>
+            <a href="https://github.com/Zeth444">
+              <i class="fa fa-github" aria-hidden="true"></i> Zeth444
+            </a>
+          </footer>
+    <script src="script.js"></script>
+    </body>
+</html>

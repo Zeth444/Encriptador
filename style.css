@@ -1,0 +1,271 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: linear-gradient(to bottom right, rgb(0, 0, 0),rgb(58, 57, 57), rgb(185, 185, 185));
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 40px;
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    margin-left: 40px;
+    margin-top: 40px;  
+}
+
+.logo img {
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    width: 120px;
+    height: 90px;
+    border-radius: 3px;
+}
+
+.texto {
+    position: absolute;
+    width: 577px;
+    height: 450px;
+    left: 240px;
+    top: 168px;
+
+}
+
+.texto textarea {
+
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #9ea0a5;
+    border: none;
+    width: 650px;
+    height: 400px;
+    resize: none;
+    background: transparent;
+
+}
+
+.texto textarea:focus{
+    outline: none;
+ }
+
+.aviso {
+
+    color: cyan;
+    margin-top: 150px;
+    opacity: 0.5;
+}
+
+.botones {
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 220px;
+    top: 750px;
+
+}
+
+.encriptar-bt {
+    width: 328px;
+    height: 67px;
+    border-radius: 32px;
+    margin-right: 12px;
+    background: linear-gradient(to bottom right,rgb(7, 7, 7), rgb(75, 73, 73));
+    color: #f5f5f7;
+    font-size: 20px;
+
+}
+
+.encriptar-bt:hover{
+    width: 360px;
+    height: 75px;
+    transition: 0.5s;
+}
+
+.desencriptar-bt {
+    width: 328px;
+    height: 67px;
+    margin-left: 12px;
+    border-radius: 32px;
+    background: linear-gradient(to bottom right,rgb(61, 60, 60), rgb(167, 162, 162));
+    color: #f0f0f0;
+    font-size: 20px;
+
+}
+
+.desencriptar-bt:hover{
+    width: 360px;
+    height: 75px;
+    transition: 0.5s;
+}
+
+
+.area-2 {
+
+    position: absolute;
+    left: 1000px;
+    top: 40px;
+}
+
+.mensaje {
+     
+    width: 358px;
+    height: 839px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    resize: none;
+    background-image: url("imagenes/cabalier.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+
+.area-2 button {
+
+    width: 358px;
+    height: 45px;
+    border-radius: 12px;
+    background: linear-gradient(to bottom right ,rgb(77, 76, 76), rgb(236, 236, 236));
+    color: #ffffff;
+    font-size: 20px;
+
+
+}
+
+.area-2 button:hover {
+
+    height: 60px;
+    transition: 0.5s;
+}
+
+.datos {
+    width: 1440px;
+    height: auto;
+    color: rgb(253, 254, 255);
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient(to bottom right,rgb(7, 7, 7), rgb(75, 73, 73));
+    text-shadow: #74f5fa;
+
+}
+
+/*Aqui comienza la adaptacion a movil*/
+
+@media screen and (max-width: 480px){
+
+    .container{
+        display: flex;
+        position: relative;
+        width: 100%;
+        min-height: 1600px;
+        overflow-x: hidden;
+        
+
+    }
+
+    .logo {
+        position: absolute;
+        width: 375px;
+        height: 96px;
+        left: 0px;
+        top: 0px;
+    }
+
+    textarea.texto-cap {
+        position: absolute;
+        width: 343px;
+        height: 450px;
+        margin-left: -210px;
+        top: 52px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+
+    }
+
+    .aviso {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+        position: absolute;
+        width: 229px;
+        height: 18px;
+        left: -200px;
+        top: 450px;    
+    }
+
+    .botones{
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        position: absolute;
+        width: 343px;
+        height: 158px;
+        left: 16px;
+        top: 800px;
+          
+    }
+
+    .encriptar-bt {
+
+       margin-left: 10px;
+    }
+
+    .area-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 32px;
+        gap: 32px;
+        position: absolute;
+        width: 327px;
+        height: 400px;
+        left: 15px;
+        top: 1000px;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+    }
+
+    .mensaje {
+
+        margin-right: -5px;
+    }
+
+    .bt-copiar{
+        margin-top: -10px;
+    }
+
+   .datos {
+    width: 100%;
+    font-size: 15px;
+    min-height: 260px;
+   }
+
+ 
+}
